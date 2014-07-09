@@ -9,7 +9,7 @@ Add support for the editor to any taxonomy. For example:
 	
 	$args = array(
 		'hierarchical' => true,
-		'label'        => __( 'Category', 'tp' ),
+		'label'        => 'Taxonomy',
 		'supports'     => array( 'editor' ),
 	);
-	register_taxonomy( 'category', $post_type, $args );
+	register_taxonomy( $taxonomy, $post_type, $args );
