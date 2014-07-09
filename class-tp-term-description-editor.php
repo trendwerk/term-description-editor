@@ -5,8 +5,6 @@
  */
 
 class TP_Term_Description_Editor {
-	var $taxonomy = 'tips-category';
-	
 	function __construct() {
 		add_action('init',array($this,'init'));
 		add_action('admin_enqueue_scripts',array($this,'enqueue_scripts'));
