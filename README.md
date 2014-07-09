@@ -5,6 +5,11 @@ Transforms the term description textarea to a WordPress WYSIWYG editor.
 
 ## Usage
 
-Add support for the editor to any taxonomy.
+Add support for the editor to any taxonomy. For example:
 	
-	add_post_type_support( $post_type, 'editor' );
+	$args = array(
+		'hierarchical' => true,
+		'label'        => __( 'Category', 'tp' ),
+		'supports'     => array( 'editor' ),
+	);
+	register_taxonomy( 'category', $post_type, $args );
