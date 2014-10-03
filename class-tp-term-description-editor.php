@@ -6,7 +6,7 @@
 
 class TP_Term_Description_Editor {
 	function __construct() {
-		add_action('init',array($this,'init'));
+		add_action('init',array($this,'init'),11);
 		add_action('admin_enqueue_scripts',array($this,'enqueue_scripts'));
 		
 		//Allow HTML in Term descriptions
@@ -58,6 +58,6 @@ class TP_Term_Description_Editor {
 	 * @enqueue scripts (admin)
 	 */
 	function enqueue_scripts() {
-		wp_enqueue_script('tp-term-description-editor',get_stylesheet_directory_uri().'/assets/plugins/term-description-editor/js/TermDescriptionEditor.js',array('jquery'));
+		wp_enqueue_script( 'tp-term-description-editor', plugins_url( 'assets/js/admin.js', __FILE__ ), array( 'jquery' ) );
 	}
 } new TP_Term_Description_Editor;
