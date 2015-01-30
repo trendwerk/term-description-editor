@@ -2,6 +2,13 @@
 /**
  * Plugin Name: Term description editor
  * Description: Transforms the term description textarea to a WordPress WYSIWYG editor.
+ *
+ * Plugin URI: https://github.com/trendwerk/term-description-editor
+ * 
+ * Author: Trendwerk
+ * Author URI: https://github.com/trendwerk
+ * 
+ * Version: 1.0.0
  */
 
 class TP_Term_Description_Editor {
